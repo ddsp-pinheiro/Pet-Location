@@ -69,6 +69,9 @@ curl -X GET "http://localhost:8080/api/pet-location/sensor123/last-location"
 
 [Aqui](docs/flows-and-scenarios.md) há ainda alguns cenários que podem ser identificados na execução dessas requisições 
 
+⚠️️**Atenção a aplicação conta com uma acessKey que disponibiliza um número limitado de requisições na integração, em caso
+de limite alcançado acessKey deve ser substituida por uma nova.**
+
 ---
 
 ### 🛠️ Tecnologias Utilizadas
@@ -121,7 +124,8 @@ Esse projeto se trata do desenvolvimento de um case para o processo seletivo do 
 
 ---
 
-**Em caso de dúvidas verifique o [video demonstrativo]() e [collection base](src/main/resources/templates/PetLocation.postman_collection.json)**
+**Em caso de dúvidas verifique o [video demonstrativo](docs/media/video_demonstrativo.mp4) e [collection base](src/main/resources/templates/PetLocation.postman_collection.json)**
 <br>
-[Links disponiveis na aplicação](docs/sumary-links.md) Att Dan
+Att Dan Pinheiro.
+
 
