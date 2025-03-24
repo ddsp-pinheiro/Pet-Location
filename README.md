@@ -121,7 +121,8 @@ Esse projeto se trata do desenvolvimento de um case para o processo seletivo do 
 
 ---
 
-**Em caso de dúvidas verifique o [video demonstrativo]() e [collection base](src/main/resources/templates/PetLocation.postman_collection.json)**
+**Em caso de dúvidas verifique o [video demonstrativo](docs/media/video_demonstrativo.mp4) e [collection base](src/main/resources/templates/PetLocation.postman_collection.json)**
 <br>
-[Links disponiveis na aplicação](docs/sumary-links.md) Att Dan
+Att Dan Pinheiro.
+
 
