@@ -27,7 +27,7 @@ public class PetLocationService {
     private final PetRepository petRepository;
     private final PetLocationMetrics petLocationMetrics;
 
-    private static final String accessKey = "f78554794f26bad1ccf06352d58e3395";
+    private static final String accessKey = "556cf1add7c0ee0c3ade5d658d0ad754";
     private static final Logger logger = LoggerFactory.getLogger(PetLocationService.class);
 
 
