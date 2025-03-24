@@ -40,7 +40,6 @@ A **Pet Location** é uma aplicação para registrar e consultar a localização
 http://localhost:8080/swagger-ui.html/index.html?
 ```
 
-
 ### 📝 Exemplos de Requisições
 
 Registrar Localização do Pet
@@ -67,6 +66,8 @@ Obter Última Localização do Pet
 ```bash
 curl -X GET "http://localhost:8080/api/pet-location/sensor123/last-location"
 ```
+
+[Aqui](docs/flows-and-scenarios.md) há ainda alguns cenários que podem ser identificados na execução dessas requisições 
 
 ---
 
