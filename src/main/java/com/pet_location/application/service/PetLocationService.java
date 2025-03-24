@@ -82,8 +82,14 @@ public class PetLocationService {
     }
 
     private Pet findOrCreatePet(String sensorId, Double latitude, Double longitude) {
-
         return petRepository.findBySensorId(sensorId)
+                .map(existingPet -> {
+                    logger.info("m=findOrCreatePet: Pet encontrado. Atualizando dados para sensorId: {}", sensorId);
+                    existingPet.setLatitude(latitude);
+                    existingPet.setLongitude(longitude);
+                    existingPet.setDateTime(LocalDateTime.now());
+                    return petRepository.save(existingPet);
+                })
                 .orElseGet(() -> {
                     logger.info("m=findOrCreatePet: Pet não encontrado. Criando novo Pet com sensorId: {}", sensorId);
                     Pet newPet = new Pet();
@@ -91,7 +97,7 @@ public class PetLocationService {
                     newPet.setLatitude(latitude);
                     newPet.setLongitude(longitude);
                     newPet.setDateTime(LocalDateTime.now());
-                    return newPet;
+                    return petRepository.save(newPet);
                 });
     }
 
