@@ -69,6 +69,9 @@ curl -X GET "http://localhost:8080/api/pet-location/sensor123/last-location"
 
 [Aqui](docs/flows-and-scenarios.md) há ainda alguns cenários que podem ser identificados na execução dessas requisições 
 
+⚠️️**Atenção a aplicação conta com uma acessKey que disponibiliza um número limitado de requisições na integração, em caso
+de limite alcançado acessKey deve ser substituida por uma nova.**
+
 ---
 
 ### 🛠️ Tecnologias Utilizadas
