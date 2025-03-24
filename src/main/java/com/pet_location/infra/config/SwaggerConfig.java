@@ -22,7 +22,7 @@ public class SwaggerConfig {
     public GroupedOpenApi publicApi() {
         return GroupedOpenApi.builder()
                 .group("pet-location")
-                .packagesToScan("com.pet_location.infra.controller")
+                .packagesToScan("com.pet_location.presentation.controller")
                 .pathsToMatch("/**")
                 .build();
     }

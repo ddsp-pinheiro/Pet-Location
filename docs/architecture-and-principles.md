@@ -10,26 +10,10 @@ A aplicação segue a **Clean Architecture**, com as seguintes camadas:
     - Orquestra os casos de uso.
 
 3. **Camada de Domínio**:
-    - Contém as entidades e regras de negócio.
+    - Contém as entidades e repositórios.
 
 4. **Camada de Infraestrutura**:
-    - Lida com detalhes externos, como banco de dados e APIs externas.
-
----
-
-## 🧠 **Abstração, Acoplamento, Extensibilidade e Coesão**
-
-### **Abstração**
-- Uso de interfaces para esconder detalhes de implementação.
-
-### **Baixo Acoplamento**
-- Injeção de dependência e uso de interfaces.
-
-### **Extensibilidade**
-- Facilidade de adicionar novas funcionalidades.
-
-### **Alta Coesão**
-- Cada classe e método tem uma responsabilidade clara.
+    - Lida com métricas, configurações e APIs externas.
 
 ---
 
@@ -98,15 +82,14 @@ A aplicação segue os princípios **SOLID**:
 
 ## 🔍 **Observabilidade**
 
-A aplicação foi projetada com foco em **observabilidade**:
+A aplicação conta com alguns recursos de observabilidade:
 
 1. **Métricas**:
     - `PetLocationMetrics` com Micrometer para monitorar registros de localização.
+    - Utiliza do Prometheus e Grafana para a exibição das métricas em dashboard.
 
 2. **Logs**:
-    - Logs detalhados em pontos-chave (início e fim do registro de localização, erros na API externa).
+    - Logs detalhados em pontos estratégicos.
 
-3. **Traces**:
-    - Estrutura pronta para integração com ferramentas como Jaeger ou Zipkin.
 
 
